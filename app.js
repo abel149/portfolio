@@ -21,9 +21,14 @@ document.addEventListener("scroll", () => {
   }
 });
 
-menu_item.forEach((item) => {
-  item.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    mobile_menu.classList.toggle("active");
+mobile_menu.classList.toggle("active");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    }
   });
 });
+const hiddenElements = document.querySelectorAll('.hidden');
+hiddenElements.forEach((el) => observer.observe(el));
