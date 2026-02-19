@@ -470,6 +470,7 @@ p {
   position: relative;
   overflow: hidden;
   box-shadow: var(--shadow-md);
+  will-change: transform;
 }
 
 #services .service-item::before {
@@ -661,6 +662,7 @@ p {
   transition: all 0.3s ease;
   padding: 40px;
   position: relative;
+  will-change: transform;
 }
 
 #projects .project-item::before {
