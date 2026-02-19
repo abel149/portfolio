@@ -15,13 +15,11 @@ hamburger.addEventListener("click", () => {
 document.addEventListener("scroll", () => {
   var scroll_position = window.scrollY;
   if (scroll_position > 250) {
-    header.style.backgroundColor = "#29323c";
+    header.style.backgroundColor = "var(--dark-bg)";
   } else {
     header.style.backgroundColor = "transparent";
   }
 });
-
-mobile_menu.classList.toggle("active");
 
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -30,5 +28,6 @@ const observer = new IntersectionObserver((entries) => {
     }
   });
 });
+
 const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
