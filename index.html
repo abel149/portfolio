@@ -5,8 +5,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="style.css" />
-  <title>My Website</title>
-  <style></style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <title>Abel Ashenafi - Software Developer & AI Engineer</title>
 </head>
 
 <body>
@@ -30,7 +30,6 @@
             <li><a href="#projects" data-after="Projects">Projects</a></li>
             <li><a href="#about" data-after="About">About</a></li>
             <li><a href="#contact" data-after="Contact">Contact</a></li>
-
           </ul>
         </div>
       </div>
@@ -41,11 +40,28 @@
   <!-- Hero Section  -->
   <section id="hero">
     <div class="hero container">
-      <div>
-        <h1>Hello, <span></span></h1>
-        <h1>My Name is <span></span></h1>
-        <h1>ABEL <span></span></h1>
-        <a href="#projects" type="button" class="cta">Portfolio</a>
+      <div class="hero-content">
+        <div class="hero-text">
+          <h1>Hello, I'm <span>Abel Ashenafi</span></h1>
+          <h2>Software Developer & AI Engineer</h2>
+          <p>Passionate about building intelligent solutions that bridge the gap between human creativity and machine intelligence. Specialized in AI/ML, Full Stack Development, and creating innovative digital experiences.</p>
+          <div class="hero-buttons">
+            <a href="#projects" class="cta primary">View Projects</a>
+            <a href="#contact" class="cta secondary">Get In Touch</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="profile-card">
+            <img src="./img/KBPH0282.JPG" alt="Abel Ashenafi" />
+            <div class="card-overlay">
+              <div class="social-links">
+                <a href="https://github.com/abel149" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/abel-ashenafi-b83124362" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="mailto:ashenafiabel66@gmail.com"><i class="fas fa-envelope"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -55,247 +71,403 @@
   <section id="services">
     <div class="services container">
       <div class="service-top">
-        <h1 class="section-title">Serv<span>i</span>ces</h1>
+        <h1 class="section-title">My <span>Services</span></h1>
         <p>
-          I am a software Developer and I have been working on web app
-          development for 1 years and now I am working on web development and
-          descktop applications. My main goal is to create user-friendly and
-          efficient applications. Here are the skills I have
+          As a versatile software developer with expertise in AI/ML and modern web technologies, 
+          I deliver comprehensive solutions that drive innovation and business growth.
         </p>
       </div>
 
       <div class="service-bottom">
         <div class="service-item hidden">
           <div class="icon">
-            <img src="https://img.icons8.com/bubbles/100/000000/services.png" />
+            <i class="fas fa-brain"></i>
           </div>
           <h2>AI & Machine Learning</h2>
           <p>
-            Experienced in building AI solutions using Python, TensorFlow, and PyTorch. Specialized in Graph Neural
-            Networks, RAG systems, and Deep Learning applications.
+            Building intelligent solutions using Python, TensorFlow, and PyTorch. Specialized in Graph Neural Networks, RAG systems, and Deep Learning applications that solve real-world problems.
           </p>
+          <div class="tech-stack">
+            <span class="tech-tag">Python</span>
+            <span class="tech-tag">TensorFlow</span>
+            <span class="tech-tag">PyTorch</span>
+            <span class="tech-tag">GNN</span>
+          </div>
         </div>
 
         <div class="service-item hidden">
           <div class="icon">
-            <img src="https://img.icons8.com/bubbles/100/000000/services.png" />
+            <i class="fas fa-code"></i>
           </div>
-          <h2>Full Stack Web Dev</h2>
+          <h2>Full Stack Development</h2>
           <p>
-            Proficient in modern web technologies including Node.js, Express, PHP, and Laravel. I build scalable,
-            user-friendly applications with a focus on clean code and performance.
+            Creating scalable, user-friendly applications with modern web technologies. From responsive frontends to robust backends, I deliver complete solutions with clean code and optimal performance.
           </p>
+          <div class="tech-stack">
+            <span class="tech-tag">Node.js</span>
+            <span class="tech-tag">Express</span>
+            <span class="tech-tag">React</span>
+            <span class="tech-tag">MongoDB</span>
+          </div>
         </div>
 
         <div class="service-item hidden">
           <div class="icon">
-            <img src="https://img.icons8.com/bubbles/100/000000/services.png" />
+            <i class="fas fa-desktop"></i>
           </div>
-          <h2>Desktop Apps & C#</h2>
+          <h2>Desktop Applications</h2>
           <p>
-            I use C# .NET for rapid application development of reliable desktop and web applications, delivering
-            efficient solutions for complex business needs.
+            Developing powerful desktop applications using C# .NET. Creating efficient, reliable solutions for complex business needs with modern desktop application architectures.
           </p>
+          <div class="tech-stack">
+            <span class="tech-tag">C#</span>
+            <span class="tech-tag">.NET</span>
+            <span class="tech-tag">WPF</span>
+            <span class="tech-tag">SQL</span>
+          </div>
         </div>
-
       </div>
     </div>
+  </section>
+  <!-- End Service Section -->
 
+  <!-- Experience Section -->
+  <section id="experience">
+    <div class="experience container">
+      <div class="experience-header">
+        <h1 class="section-title">Work <span>Experience</span></h1>
+      </div>
+      <div class="all-experience">
+        <div class="experience-item hidden">
+          <div class="experience-info">
+            <h1>iCog Labs</h1>
+            <h2>Software Developer / Research Intern</h2>
+            <h4>May 2025 - Dec 2025</h4>
+            <ul class="experience-list">
+              <li><strong>Graph Mining Optimization:</strong> Enhanced SPMiner performance by optimizing time/space
+                complexity and implementing multiprocessing. Successfully trained order embedding models on real
+                datasets.</li>
+              <li><strong>AI Assistant Development:</strong> Built a RAG-based AI assistant system, implementing
+                efficient chunking strategies, metadata schemas, and vector storage integration using Qdrant.</li>
+              <li><strong>Infrastructure & CI/CD:</strong> Improved BioCypher-KG workflows with Docker fixes, GitHub
+                Actions enhancements, and new writer supports (Parquet, NetworkX).</li>
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
+  </section>
+  <!-- End Experience Section -->
 
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="projects container">
+      <div class="projects-header">
+        <h1 class="section-title">Featured <span>Projects</span></h1>
+      </div>
+      <div class="all-projects">
+        <div class="project-item hidden">
+          <div class="project-info">
+            <h1>01</h1>
+            <h2>Alpha Cloud-based HRMS Solution</h2>
+            <p>
+              A comprehensive Human Resource Management System built with cloud architecture. Features include employee management, payroll processing, attendance tracking, and advanced analytics dashboard with real-time data synchronization.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Laravel</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">React</span>
+              <span class="tech-tag">Inertia</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/abel149/Alpha-cloud-based-HRMS-solution-" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-item hidden">
+          <div class="project-info">
+            <h1>02</h1>
+            <h2>Tour & Travel Node.js Application</h2>
+            <p>
+              Full-featured tour and travel management platform with booking systems, payment integration, and real-time availability tracking. Includes admin dashboard, customer portal, and vendor management modules.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Node.js</span>
+              <span class="tech-tag">Express</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">Stripe API</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/abel149/tour-travel-nodejs " class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="https://abel149.github.io/tour-and-travel/" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+         
+        </div>
+
+        <div class="project-item hidden">
+          <div class="project-info">
+            <h1>03</h1>
+            <h2>Self-Reflective RAG System</h2>
+            <p>
+              Advanced Retrieval-Augmented Generation system with self-reflection capabilities. Implements intelligent chunking strategies, semantic search, and context-aware responses using vector databases and large language models.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Qdrant</span>
+              <span class="tech-tag">OpenAI</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/abel149/Self-Reflective-RAG-System" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            </div>
+          </div>
+         
+        </div>
+
+        <div class="project-item hidden">
+          <div class="project-info">
+            <h1>04</h1>
+            <h2>Factor Graph Scheduling System</h2>
+            <p>
+              Intelligent scheduling system using factor graph representation for optimization. Solves complex scheduling problems with constraint satisfaction and probabilistic reasoning for optimal resource allocation.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Python</span>
+              <span class="tech-tag">Factor graph</span>
+              <span class="tech-tag">NumPy</span>
+              <span class="tech-tag">Graph Theory</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/abel149/-factor-graph-representation-Scheduling" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Research Paper</a>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="project-item hidden">
+          <div class="project-info">
+            <h1>05</h1>
+            <h2>Transformer BERT & ChatGPT Integration</h2>
+            <p>
+              Cutting-edge NLP project implementing transformer architectures with BERT fine-tuning and ChatGPT API integration. Features include text classification, sentiment analysis, and conversational AI capabilities.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Transformers</span>
+              <span class="tech-tag">BERT</span>
+              <span class="tech-tag">OpenAI API</span>
+              <span class="tech-tag">PyTorch</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/abel149/Transformer-BERT-AND-CHATGPT-" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Demo</a>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="project-item hidden">
+          <div class="project-info">
+            <h1>06</h1>
+            <h2>Neuro-Symbolic AI Framework</h2>
+            <p>
+              Hybrid AI system combining neural networks with symbolic reasoning. Implements knowledge graphs, logical inference, and deep learning for explainable AI and complex problem-solving capabilities.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Neural Networks</span>
+              <span class="tech-tag">Symbolic AI</span>
+              <span class="tech-tag">Knowledge Graphs</span>
+              <span class="tech-tag">Python</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/abel149/Neuro-Symbolic-AI" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Research</a>
+            </div>
+          </div>
+          
+        </div>
+
+        <div class="project-item hidden">
+          <div class="project-info">
+            <h1>07</h1>
+            <h2>Uncertainty Quantification ML System</h2>
+            <p>
+              Advanced machine learning system with uncertainty quantification capabilities. Implements Bayesian neural networks, ensemble methods, and probabilistic predictions for reliable decision-making in critical applications.
+            </p>
+            <div class="project-tech">
+              <span class="tech-tag">Bayesian ML</span>
+              <span class="tech-tag">TensorFlow</span>
+              <span class="tech-tag">PyMC3</span>
+              <span class="tech-tag">Statistics</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/abel149/Uncertainty-Quantification-" class="project-link"><i class="fab fa-github"></i> Code</a>
+              <a href="#" class="project-link"><i class="fas fa-external-link-alt"></i> Documentation</a>
+            </div>
+          </div>
+        
+        </div>
+      </div>
     </div>
-    <!-- End Service Section -->
+  </section>
+  <!-- End Projects Section -->
 
-    <!-- Experience Section -->
-    <section id="experience">
-      <div class="experience container">
-        <div class="experience-header">
-          <h1 class="section-title">Work <span>Experience</span></h1>
+  <!-- About Section -->
+  <section id="about">
+    <div class="about container">
+      <div class="col-left hidden">
+        <div class="about-img">
+          <img src="./img/KBPH0282.JPG" alt="Abel Ashenafi" />
         </div>
-        <div class="all-experience">
-          <div class="experience-item hidden">
-            <div class="experience-info">
-              <h1>iCog Labs</h1>
-              <h2>Software Developer / Research Intern</h2>
-              <h4>May 2025 - Dec 2025</h4>
-              <ul class="experience-list">
-                <li><strong>Graph Mining Optimization:</strong> Enhanced SPMiner performance by optimizing time/space
-                  complexity and implementing multiprocessing. Successfully trained order embedding models on real
-                  datasets.</li>
-                <li><strong>AI Assistant Development:</strong> Built a RAG-based AI assistant system, implementing
-                  efficient chunking strategies, metadata schemas, and vector storage integration using Qdrant.</li>
-                <li><strong>Infrastructure & CI/CD:</strong> Improved BioCypher-KG workflows with Docker fixes, GitHub
-                  Actions enhancements, and new writer supports (Parquet, NetworkX).</li>
-              </ul>
+      </div>
+      <div class="col-right hidden">
+        <h1 class="section-title">About <span>Me</span></h1>
+        <h2>Software Developer & AI Engineer</h2>
+        <p>
+          My name is Abel Ashenafi, and I am a Full Stack Developer with a Bachelor’s degree in Computer Science from St. Mary’s University, graduating with a CGPA of 3.75.
+
+I am passionate about Back-end Development, Artificial Intelligence, Machine Learning, and Deep Learning. I have hands-on experience building complex systems, including Graph Mining solutions and RAG-based Assistants.
+</p>
+        <div class="skills-section">
+          <h3>Technical Skills</h3>
+          <div class="skills-grid">
+            <div class="skill-item">
+              <i class="fab fa-python"></i>
+              <span>Python</span>
             </div>
+            <div class="skill-item">
+              <i class="fab fa-js"></i>
+              <span>JavaScript</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-php"></i>
+              <span>PHP</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-code"></i>
+              <span>C#</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-node-js"></i>
+              <span>Node.js</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-server"></i>
+              <span>Express</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-laravel"></i>
+              <span>Laravel</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-react"></i>
+              <span>React</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <span>PostgreSQL</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <span>MySQL</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-database"></i>
+              <span>MongoDB</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-memory"></i>
+              <span>Redis</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-brain"></i>
+              <span>Qdrant</span>
+            </div>
+            <div class="skill-item">
+              <i class="fas fa-brain"></i>
+              <span>ML/AI</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-git-alt"></i>
+              <span>Git</span>
+            </div>
+            <div class="skill-item">
+              <i class="fab fa-docker"></i>
+              <span>Docker</span>
+            </div>
+          </div>
+        </div>
+        <a href="./Resume - Full Stack Developer (3).pdf" download class="cta">Download Resume</a>
+      </div>
+    </div>
+  </section>
+  <!-- End About Section -->
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <div class="contact container">
+      <div>
+        <h1 class="section-title">Get In <span>Touch</span></h1>
+      </div>
+      <div class="contact-items">
+        <div class="contact-item">
+          <div class="icon">
+            <i class="fas fa-phone"></i>
+          </div>
+          <div class="contact-info">
+            <h1>Phone</h1>
+            <h2>+215941192566</h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon">
+            <i class="fas fa-envelope"></i>
+          </div>
+          <div class="contact-info">
+            <h1>Email</h1>
+            <h2><a href="mailto:ashenafiabel66@gmail.com" style="color: var(--text-secondary);">ashenafiabel66@gmail.com</a></h2>
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="icon">
+            <i class="fas fa-map-marker-alt"></i>
+          </div>
+          <div class="contact-info">
+            <h1>Address</h1>
+            <h2>Addis Ababa, N/F/S, Lafto</h2>
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Experience Section -->
+    </div>
+  </section>
+  <!-- End Contact Section -->
 
-    <!-- Projects Section -->
-    <section id="projects">
-      <div class="projects container">
-        <div class="projects-header">
-          <h1 class="section-title">Recent <span>Projects</span></h1>
+  <!-- Footer -->
+  <section id="footer">
+    <div class="footer container">
+      <div class="brand">
+        <h1><span>A</span>BEL <span>A</span>SHENAFI</h1>
+      </div>
+      <h2>Building Intelligent Solutions for Tomorrow</h2>
+      <div class="social-icon">
+        <div class="social-item">
+          <a href="https://github.com/abel149" target="_blank"><i class="fab fa-github"></i></a>
         </div>
-        <div class="all-projects">
-
-          <div class="project-item hidden">
-            <div class="project-info">
-              <h1>Project 1</h1>
-              <h2>SPMiner Optimization</h2>
-              <p>
-                Optimized a subgraph mining tool for better performance and scalability. Implemented multiprocessing,
-                fixed critical attributes handling, and trained embedding models using Python and Graph Neural Networks
-                concepts.
-              </p>
-            </div>
-            <div class="project-img">
-              <img src="./img/img-1.png" alt="img" />
-            </div>
-          </div>
-
-          <div class="project-item hidden">
-            <div class="project-info">
-              <h1>Project 2</h1>
-              <h2>RAG-based AI Assistant</h2>
-              <p>
-                Developed a Retrieval-Augmented Generation system. Designed storage schemas for MongoDB and Qdrant,
-                implemented semantic search pipelines, and optimized data chunking for large codebases.
-              </p>
-            </div>
-            <div class="project-img">
-              <img src="./img/img-1.png" alt="img" />
-            </div>
-          </div>
-
-          <div class="project-item hidden">
-            <div class="project-info">
-              <h1>Project 3</h1>
-              <h2>TOUR AND TRAVEL WEB APP</h2>
-              <p>
-                I built this web application for tour and travel company. I worked on this project with HTML, CSS,
-                JAVASCRIPT for front end and NODEJS framework for the backend. Check it out <a
-                  href="//github.com/abel149/tour-and-travel" style="color: crimson;">here</a>.
-              </p>
-            </div>
-            <div class="project-img">
-              <img src="./img/img-1.png" alt="img" />
-            </div>
-          </div>
-
-          <div class="project-item">
-            <div class="project-info">
-              <h1>Project 4</h1>
-              <h2>Registration And Grading System</h2>
-              <p>
-                I built this web application by using bootstrap for the frontend and PHP for the backend. You can get it
-                on GitHub <a href="https://github.com/abel149/registration-and-grading-system"
-                  style="color: crimson;">here</a>.
-              </p>
-            </div>
-            <div class="project-img">
-              <img src="./img/img-1.png" alt="img" />
-            </div>
-          </div>
-
+        <div class="social-item">
+          <a href="https://www.linkedin.com/in/abel-ashenafi-b83124362" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+        <div class="social-item">
+          <a href="mailto:ashenafiabel66@gmail.com"><i class="fas fa-envelope"></i></a>
         </div>
       </div>
-    </section>
-    <!-- End Projects Section -->
-
-    <!-- About Section -->
-    <section id="about">
-      <div class="about container">
-        <div class="col-left hidden">
-          <div class="about-img">
-            <img src="./img/profile.jpg" alt="img" />
-          </div>
-        </div>
-        <div class="col-right hidden">
-          <h1 class="section-title">About <span>me</span></h1>
-          <h2>Web App Developer</h2>
-          <p>
-            My name is Abel Ashenafi. I am a Computer Science student at St. Mary’s University (Expected Graduation: Jan
-            2026) with a CGPA of 3.75.
-            Passionate about Back-end Development, AI, Machine Learning, and Deep Learning. I have hands-on experience
-            in building complex systems like Graph Miners and RAG Assistants.
-          </p>
-          <a href="#" class="cta">Download Resume</a>
-        </div>
-      </div>
-    </section>
-    <!-- End About Section -->
-    <section id="blog">
-
-    </section>
-    <!-- Contact Section -->
-    <section id="contact">
-      <div class="contact container">
-        <div>
-          <h1 class="section-title">Contact <span>info</span></h1>
-        </div>
-        <div class="contact-items">
-          <div class="contact-item">
-            <div class="icon">
-              <img src="https://img.icons8.com/bubbles/100/000000/phone.png" />
-            </div>
-            <div class="contact-info">
-              <h1>Phone</h1>
-              <h2>+251941192566</h2>
-              <h2>+251---------</h2>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon">
-              <img src="https://img.icons8.com/bubbles/100/000000/new-post.png" />
-            </div>
-            <div class="contact-info">
-              <h1>Email</h1>
-              <h2>ashenafiabel49@gmail.com</h2>
-              <h2>ashenafiabel66@gmail.com</h2>
-            </div>
-          </div>
-          <div class="contact-item">
-            <div class="icon">
-              <img src="https://img.icons8.com/bubbles/100/000000/map-marker.png" />
-            </div>
-            <div class="contact-info">
-              <h1>Address</h1>
-              <h2>Addiss Ababa, N/F/S , lafto</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- End Contact Section -->
-
-    <!-- Footer -->
-    <section id="footer">
-      <div class="footer container">
-        <div class="brand">
-          <h1><span>A</span>BEL <span>A</span>SHENAFI</h1>
-        </div>
-        <h2>Your Complete Web Solution</h2>
-        <div class="social-icon">
-          <div class="social-item">
-            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/facebook-new.png" /></a>
-          </div>
-          <div class="social-item">
-            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/instagram-new.png" /></a>
-          </div>
-
-          <div class="social-item">
-            <a href="#"><img src="https://img.icons8.com/bubbles/100/000000/behance.png" /></a>
-          </div>
-        </div>
-        <p>Copyright © 2020 Abel. All rights reserved</p>
-      </div>
-    </section>
-    <!-- End Footer -->
-    <script src="./app.js"></script>
+      <p>Copyright 2025 Abel Ashenafi. All rights reserved</p>
+    </div>
+  </section>
+  <!-- End Footer -->
+  <script src="./app.js"></script>
 </body>
 
 </html>
